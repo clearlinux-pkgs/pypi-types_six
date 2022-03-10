@@ -1,5 +1,5 @@
 PKG_NAME := pypi-types_six
-URL = https://files.pythonhosted.org/packages/d1/b4/3f22ae28356419c20e98eb1530e9f019b0a54002ebedc359973843c1eda0/types-six-1.16.11.tar.gz
+URL = https://files.pythonhosted.org/packages/23/d1/3868010a89f4e6a69457f444e1e4628d266ea15f9f989dab83dec5aad73b/types-six-1.16.12.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
