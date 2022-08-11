@@ -4,7 +4,7 @@
 #
 Name     : pypi-types_six
 Version  : 1.16.18
-Release  : 14
+Release  : 15
 URL      : https://files.pythonhosted.org/packages/cb/42/5572b4f4b215f93e023aada6d40f9950a5ee5f4b2d4e67214efd0efcf390/types-six-1.16.18.tar.gz
 Source0  : https://files.pythonhosted.org/packages/cb/42/5572b4f4b215f93e023aada6d40f9950a5ee5f4b2d4e67214efd0efcf390/types-six-1.16.18.tar.gz
 Summary  : Typing stubs for six
