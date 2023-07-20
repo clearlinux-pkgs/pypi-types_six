@@ -4,10 +4,10 @@
 # Using build pattern: distutils3
 #
 Name     : pypi-types_six
-Version  : 1.16.21.8
-Release  : 31
-URL      : https://files.pythonhosted.org/packages/a7/bc/faaea420291c4d9ec3d4d34115cb0e37c9ff79b4bcb0b9889bc57e9438bb/types-six-1.16.21.8.tar.gz
-Source0  : https://files.pythonhosted.org/packages/a7/bc/faaea420291c4d9ec3d4d34115cb0e37c9ff79b4bcb0b9889bc57e9438bb/types-six-1.16.21.8.tar.gz
+Version  : 1.16.21.9
+Release  : 32
+URL      : https://files.pythonhosted.org/packages/e1/17/dfc4897a8a4a636e7bb9a219d7a01a339e1c8c4d403fd9d363ded7a98e75/types-six-1.16.21.9.tar.gz
+Source0  : https://files.pythonhosted.org/packages/e1/17/dfc4897a8a4a636e7bb9a219d7a01a339e1c8c4d403fd9d363ded7a98e75/types-six-1.16.21.9.tar.gz
 Summary  : Typing stubs for six
 Group    : Development/Tools
 License  : Apache-2.0
@@ -41,10 +41,10 @@ python3 components for the pypi-types_six package.
 
 
 %prep
-%setup -q -n types-six-1.16.21.8
-cd %{_builddir}/types-six-1.16.21.8
+%setup -q -n types-six-1.16.21.9
+cd %{_builddir}/types-six-1.16.21.9
 pushd ..
-cp -a types-six-1.16.21.8 buildavx2
+cp -a types-six-1.16.21.9 buildavx2
 popd
 
 %build
@@ -52,15 +52,15 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1680015268
+export SOURCE_DATE_EPOCH=1689879700
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
-export CFLAGS="$CFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
-export FCFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
-export FFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
-export CXXFLAGS="$CXXFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
+export CFLAGS="$CFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+export FCFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+export FFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+export CXXFLAGS="$CXXFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
