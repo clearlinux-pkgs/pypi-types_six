@@ -6,10 +6,10 @@
 # autospec commit: 5905be9
 #
 Name     : pypi-types_six
-Version  : 1.16.21.20240425
-Release  : 38
-URL      : https://files.pythonhosted.org/packages/04/b8/34a12ef6b1f046590fc5f8ab15b5756a39f4edea1fe7b7a84ab6a7859c01/types-six-1.16.21.20240425.tar.gz
-Source0  : https://files.pythonhosted.org/packages/04/b8/34a12ef6b1f046590fc5f8ab15b5756a39f4edea1fe7b7a84ab6a7859c01/types-six-1.16.21.20240425.tar.gz
+Version  : 1.16.21.20240513
+Release  : 39
+URL      : https://files.pythonhosted.org/packages/1b/2a/d786db60b07bf61a16469f6781138799b3e16f87fe4b27fb9454bc01e74a/types-six-1.16.21.20240513.tar.gz
+Source0  : https://files.pythonhosted.org/packages/1b/2a/d786db60b07bf61a16469f6781138799b3e16f87fe4b27fb9454bc01e74a/types-six-1.16.21.20240513.tar.gz
 Summary  : Typing stubs for six
 Group    : Development/Tools
 License  : Apache-2.0
@@ -43,10 +43,10 @@ python3 components for the pypi-types_six package.
 
 
 %prep
-%setup -q -n types-six-1.16.21.20240425
-cd %{_builddir}/types-six-1.16.21.20240425
+%setup -q -n types-six-1.16.21.20240513
+cd %{_builddir}/types-six-1.16.21.20240513
 pushd ..
-cp -a types-six-1.16.21.20240425 buildavx2
+cp -a types-six-1.16.21.20240513 buildavx2
 popd
 
 %build
@@ -54,7 +54,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1714061337
+export SOURCE_DATE_EPOCH=1715623623
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
