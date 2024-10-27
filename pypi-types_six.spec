@@ -7,7 +7,7 @@
 #
 Name     : pypi-types_six
 Version  : 1.16.21.20241009
-Release  : 40
+Release  : 41
 URL      : https://files.pythonhosted.org/packages/f6/ea/4910f1e417cdd0cfeb0ccb0dfae1ac5d27a3ef7a204aea11a0431abc5e4d/types-six-1.16.21.20241009.tar.gz
 Source0  : https://files.pythonhosted.org/packages/f6/ea/4910f1e417cdd0cfeb0ccb0dfae1ac5d27a3ef7a204aea11a0431abc5e4d/types-six-1.16.21.20241009.tar.gz
 Summary  : Typing stubs for six
